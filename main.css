@@ -1,5 +1,6 @@
 body {
     background-color: blueviolet;
+    overflow: hidden;
   }
   
   :root {
@@ -9,9 +10,13 @@ body {
   
   .tab {
     position: absolute;
-    height: 100px;
+    height: 200px;
     width: 100px;
     border-radius: 10px;
+  }
+
+  .selected-tab {
+      background-color: brown;
   }
   
   .track1 {
@@ -19,6 +24,27 @@ body {
     top: 20%;
     margin-left: -20px;
   }
+
+  .track2 {
+    background-color: none;
+    top: 20%;
+    right: 0%;
+    margin-right: -20px;
+  }
+
+  .track3 {
+    background-color: none;
+    top: 60%;
+    margin-left: -20px;
+  }
+
+  .track4 {
+    background-color: none;
+    top: 60%;
+    right: 0%;
+    margin-right: -20px;
+  }
+
   
   .flex-column {
     display: flex;
@@ -30,9 +56,9 @@ body {
     border-radius: 10px;
   }
   
-  .flex-column :first-child {
+  /* .flex-column :first-child {
     background-color: rgba(255,255,255,0.5);
-    
+     */
   /*   border: solid 1px red; */
   }
   
@@ -41,15 +67,23 @@ body {
     
   /*   border: solid 1px red; */
   }
+
+  .flex {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
   
   .grid {
     display: grid;
-    height: 100vh;
+    height: 50%;
+    width: 50%;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(13, 1fr);
     grid-gap: 2px;
-    
-    padding: 30px 150px;
+
+    /* border: solid 1px red; */
   }
   
   .c_2 {
